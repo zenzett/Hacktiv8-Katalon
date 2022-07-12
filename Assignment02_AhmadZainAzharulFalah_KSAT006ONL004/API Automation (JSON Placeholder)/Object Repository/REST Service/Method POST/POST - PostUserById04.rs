@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebServiceRequestEntity>
+   <description></description>
+   <name>POST - PostUserById04</name>
+   <tag></tag>
+   <elementGuidId>3996ce0e-c7d6-440a-8415-027985e465b7</elementGuidId>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <connectionTimeout>0</connectionTimeout>
+   <followRedirects>false</followRedirects>
+   <httpBody></httpBody>
+   <httpBodyContent>{
+  &quot;text&quot;: &quot;{\n  \&quot;title\&quot;: \&quot;Air\&quot;,\n  \&quot;body\&quot;: \&quot;Air adalah senyawa yang penting bagi semua bentuk kehidupan yang diketahui sampai saat ini di Bumi, tetapi tidak di planet lain. Air sebagian besar terdapat di laut (air asin) dan pada lapisan-lapisan es (di kutub dan puncak-puncak gunung) akan tetapi berada dan bersumber dari awan, hujan, sungai, permukaan air tawar, danau, uap air, dan lautan es. Air dalam objek-objek tersebut bergerak mengikuti suatu siklus air, yaitu: melalui penguapan, hujan, dan aliran air di atas permukaan tanah (runoff, meliputi mata air, sungai, muara) menuju laut. Air bersih penting bagi kehidupan manusia.\&quot;,\n  \&quot;userId\&quot;: \&quot;04\&quot;\n}&quot;,
+  &quot;contentType&quot;: &quot;application/json&quot;,
+  &quot;charset&quot;: &quot;UTF-8&quot;
+}</httpBodyContent>
+   <httpBodyType>text</httpBodyType>
+   <httpHeaderProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Content-Type</name>
+      <type>Main</type>
+      <value>application/json</value>
+      <webElementGuid>dacd228a-e4db-4827-9b8e-249c217333ef</webElementGuid>
+   </httpHeaderProperties>
+   <katalonVersion>8.3.5</katalonVersion>
+   <maxResponseSize>0</maxResponseSize>
+   <migratedVersion>5.4.1</migratedVersion>
+   <restRequestMethod>POST</restRequestMethod>
+   <restUrl>http://jsonplaceholder.typicode.com/posts</restUrl>
+   <serviceType>RESTful</serviceType>
+   <soapBody></soapBody>
+   <soapHeader></soapHeader>
+   <soapRequestMethod></soapRequestMethod>
+   <soapServiceEndpoint></soapServiceEndpoint>
+   <soapServiceFunction></soapServiceFunction>
+   <socketTimeout>0</socketTimeout>
+   <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
+   <verificationScript>import static org.assertj.core.api.Assertions.*
+
+import com.kms.katalon.core.testobject.RequestObject
+import com.kms.katalon.core.testobject.ResponseObject
+import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import com.kms.katalon.core.webservice.verification.WSResponseManager
+
+import groovy.json.JsonSlurper
+import internal.GlobalVariable as GlobalVariable
+
+RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
+
+ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
+
+WS.verifyResponseStatusCode(response, 201)
+
+assertThat(response.getStatusCode()).isEqualTo(201)
+
+WS.verifyElementPropertyValue(response, 'title', 'Air')
+WS.verifyElementPropertyValue(response, 'body', 'Air adalah senyawa yang penting bagi semua bentuk kehidupan yang diketahui sampai saat ini di Bumi, tetapi tidak di planet lain. Air sebagian besar terdapat di laut (air asin) dan pada lapisan-lapisan es (di kutub dan puncak-puncak gunung) akan tetapi berada dan bersumber dari awan, hujan, sungai, permukaan air tawar, danau, uap air, dan lautan es. Air dalam objek-objek tersebut bergerak mengikuti suatu siklus air, yaitu: melalui penguapan, hujan, dan aliran air di atas permukaan tanah (runoff, meliputi mata air, sungai, muara) menuju laut. Air bersih penting bagi kehidupan manusia.')
+WS.verifyElementPropertyValue(response, 'userId', '04')
+WS.verifyElementPropertyValue(response, 'id', '101')</verificationScript>
+   <wsdlAddress></wsdlAddress>
+</WebServiceRequestEntity>
