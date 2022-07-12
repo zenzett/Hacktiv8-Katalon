@@ -6,6 +6,8 @@
 
 To run this project, you will need to add / install the followings: 
 
-`Katalon Studio`
+`Katalon Studio` `NodeJS` `Appium`
+
+`Oracle VM VirtualBox` `Genymotion`
 
 &nbsp;
