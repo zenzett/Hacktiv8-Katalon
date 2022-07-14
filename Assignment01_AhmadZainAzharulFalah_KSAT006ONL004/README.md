@@ -20,8 +20,8 @@
 &nbsp;
 ### Penjelasan
 - Melakukan capture manual (Spy Web) object yang dibutuhkan pada website CURA.
-- Membuat Test Case untuk navigasi ke Login page pada website CURA.
+- Membuat Test Case untuk navigasi ke Login page pada website CURA, lalu Run.
 - Membuat Test Case untuk Login sebanyak 8 TC, dengan perbedaan sesuai pada masing-masing nama TC, lalu Run.
-- Membuat Test Case untuk membuat appointment pada website CURA.
+- Membuat Test Case untuk membuat appointment pada website CURA, lalu Run.
 
 &nbsp;
